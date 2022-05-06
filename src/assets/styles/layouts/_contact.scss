@@ -1,0 +1,11 @@
+.form {
+    width: 70%;
+    min-height: 70vh;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .form {
+            width: 80%;
+        }
+}

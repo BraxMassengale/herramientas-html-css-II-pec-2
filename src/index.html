@@ -1,47 +1,142 @@
 <!DOCTYPE html>
 <!-- TODO: Edit page content-->
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>Home</title>
-</head>
-<header>
-    <nav>
-        <button>LOGO</button>
-        <ul>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="information.html">Information</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        />
+        <title>Home</title>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="index.html" class="btn btn-primary navbar-brand">
+                <i class="fa-solid fa-user-astronaut"></i>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggle"
+                aria-controls="navbarToggle"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<body>
-    <main>
-        <!-- TODO: Set background image to some kind of festival-->
-        <h1>Music Festival</h1>
-        <p>Insert quick text about festival here</p>
-    </main>
-    <footer class="uoc-footer">
-        <nav>
-            <button>LOGO</button>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bands.html">Bands</a></li>
-                <li><a href="information.html">Information</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="bands.html"
+                            >Bands</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link link-secondary"
+                            href="information.html"
+                            >Information</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div class="social-links">
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-    </footer>
-<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-</body>
+    </header>
+
+    <body>
+        <main class="px-4 py-5 my-5 text-center hero info-hero__text">
+            <h1 class="display-5 text-primary fw-bold">Tulsa Fest</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead text-white mb-4">
+                    Tulsa Fest is a celebration of music's greatest artists from
+                    around the globe. The lineup includes world renown artists
+                    who are sure to put on an entertaining show for publics of
+                    all ages to enjoy.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button
+                        type="button"
+                        class="btn btn-primary btn-lg px-4 gap-3"
+                    >
+                        About Tulsa
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-lg px-4">
+                        Buy Tickets
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <nav class="navbar navbar-default">
+                <a href="index.html" class="navbar-brand">
+                    <i class="fa-solid fa-user-astronaut text-secondary"></i>
+                </a>
+                <div></div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="bands.html"
+                            >Bands</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link link-secondary"
+                            href="information.html"
+                            >Information</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                    <div class="vr"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://facebook.com"
+                            ><i class="fa-brands fa-facebook text-secondary"></i
+                        ></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://twitter.com"
+                            ><i class="fa-brands fa-twitter text-secondary"></i
+                        ></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://instagram.com"
+                            ><i
+                                class="fa-brands fa-instagram text-secondary"
+                            ></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>

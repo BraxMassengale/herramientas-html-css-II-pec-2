@@ -15,8 +15,7 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+@import "bootstrap/scss/bootstrap";
 
 /**
  * Import layouts
@@ -24,6 +23,9 @@
  */
 
 @import "layouts/home";
+@import "layouts/bands";
+@import "layouts/information";
+@import "layouts/contact";
 
 /**
  * Do NOT include anything else in this file!

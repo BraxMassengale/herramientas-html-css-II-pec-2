@@ -1,62 +1,370 @@
 <!DOCTYPE html>
 <!-- TODO: Change all content-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Information</title>
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"> <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-</head>
-<header>
-    <nav>
-        <button>LOGO</button>
-        <ul>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="information.html">Information</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
-    <main>
-        <section class="hero"> <!-- TODO: Set background image to a hero image -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum non nulla provident repellat voluptatum? Amet dolor</p>
-        </section>
-        <section>
-            <article>
-                <h3>Information Section Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem, commodi deserunt earum eos ex id laborum molestias necessitatibus nesciunt, obcaecati quaerat quidem similique sit tenetur ullam, veniam voluptas. Velit.</p>
-                <hr>
-                <ol>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ol>
-                <hr>
-                <div>
-                    <h4>Some little blurb about the information etc etc etc</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusantium, assumenda cupiditate debitis dolorem earum eos est expedita illo incidunt natus obcaecati odit omnis quam qui. Delectus eveniet id illo?</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        />
+        <title>Information</title>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="index.html" class="btn btn-primary navbar-brand">
+                <i class="fa-solid fa-user-astronaut"></i>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggle"
+                aria-controls="navbarToggle"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="bands.html"
+                            >Bands</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link link-secondary"
+                            href="information.html"
+                            >Information</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <section class="info-hero text-center rounded">
+                <p class="display-5 text-white fw-bold info-hero__text">
+                    Looking for information on the biggest festival in the USA?
+                    You've come to the right place.
+                </p>
+            </section>
+            <section>
+                <article>
+                    <h3 class="text-center py-4">General Information</h3>
+                    <p>
+                        Here you can find a list of commonly asked questions
+                        about our festival and Tulsa. If, after reading the FAQ,
+                        you still have any doubts, please, feel free to send a
+                        message to our team using the form located on the
+                        <a href="contact.html" class="link-secondary"
+                            >contact us</a
+                        >
+                        page.
+                    </p>
+                    <hr />
+                    <h3 class="text-center py-4">Frequently Asked Questions</h3>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    Where is the festival?
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseOne"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <p>
+                                        The festival takes place in the great
+                                        city of Tulsa, Oklahoma in the United
+                                        States of America. More specifically it
+                                        takes place at the Guthrie Green outdoor
+                                        recreation area: 111 E Reconciliation
+                                        Way, Tulsa, OK 74103, United States.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    How can I get to Tulsa?
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    <p>
+                                        There are plenty of buses, trains, and
+                                        boats, but none of them will get you to
+                                        Tulsa. Your best bet is to drive or fly!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="collapseThree"
+                                >
+                                    How can I get tickets?
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    You can't, the festival is invite only...
+                                    Just kidding! You can get tickets by calling
+                                    us at our box office number (+1)
+                                    918-111-1111. Or if you're antisocial you
+                                    can get tickets via numerous websites and
+                                    apps such as Ticketmaster and Seektickets.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFour"
+                                >
+                                    Are pets allowed at the festival?
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseFour"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    Of course! The more the merrier!All pets are
+                                    allowed at the festival provided they have
+                                    their own ticket. There is, however, a
+                                    weight limit for pets of 1000 pounds. If the
+                                    pet is under the weight limit it is allowed
+                                    in regardless of the species.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive"
+                                    aria-expanded="false"
+                                    aria-controls="collapseFive"
+                                >
+                                    Will there be food there?
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseFive"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                    There will be <strong>SO MUCH FOOD</strong>.
+                                    Prepare your belly because you will easily
+                                    gain 10% of your body weight while at the
+                                    festival. Tulsa is famous for its great food
+                                    trucks (which will be present at the
+                                    festival), so be prepared to dine on fan
+                                    favorites such as tacos, kimchi fries, and
+                                    Caribbean jerk chicken macaroni.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <hr />
+            <section>
+                <h3 class="text-center py-4">
+                    Enjoy some photos of the festival from years past!
+                </h3>
+                <div
+                    id="carouselExampleControls"
+                    class="carousel slide carousel-block"
+                    data-bs-ride="carousel"
+                >
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img
+                                src="assets/images/carousel1.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="assets/images/carousel2.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="assets/images/carousel3.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="assets/images/carousel4.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <img src="#" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dignissimos fugiat hic laborum, pariatur quae reiciendis tempore vel vero. Aperiam deserunt, et eum in laboriosam quaerat saepe tempore vel! Architecto.</p>
-            </article>
-        </section>
-    </main>
-</body>
-<footer class="uoc-footer">
-    <nav>
-        <button>LOGO</button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="information.html">Information</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <div class="social-links">
-        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-</footer>
+                <p class="py-4 text-center">
+                    <strong>You</strong> could be the next festival-goer to be
+                    featured on this website! If you think you have what it
+                    takes to be featured as the greatest photographer in Tulsa,
+                    send in your photos or tweet us with the hashtag
+                    #TulsaFest2022. If your photo is chosen you will be
+                    reimbursed for the full price of your ticket and you will
+                    also receive a shirt commemorating your accomplishment!
+                </p>
+                <blockquote class="blockquote">
+                    <p class="text-center fw-bold">
+                        Thank you dearly to all of our lovely patrons, we look
+                        forward to seeing you at the next TulsaFest™!
+                    </p>
+                </blockquote>
+            </section>
+        </main>
+    </body>
+    <footer class="footer">
+        <nav class="navbar navbar-default">
+            <a href="index.html" class="navbar-brand">
+                <i class="fa-solid fa-user-astronaut text-secondary"></i>
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="index.html"
+                        >Home</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="bands.html"
+                        >Bands</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="information.html"
+                        >Information</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="contact.html"
+                        >Contact Us</a
+                    >
+                </li>
+                <div class="vr"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com"
+                        ><i class="fa-brands fa-facebook text-secondary"></i
+                    ></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com"
+                        ><i class="fa-brands fa-twitter text-secondary"></i
+                    ></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://instagram.com"
+                        ><i class="fa-brands fa-instagram text-secondary"></i
+                    ></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
 </html>

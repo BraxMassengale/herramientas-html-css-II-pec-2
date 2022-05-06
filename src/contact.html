@@ -1,62 +1,168 @@
 <!DOCTYPE html>
 <!-- TODO: Replace all content -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-</head>
-<header>
-    <nav>
-        <button>LOGO</button>
-        <ul>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="information.html">Information</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
-<body>
-    <main>
-        <h3>Contact Us</h3>
-        <p>Let us know what you think of the lineup and if there is anything you'd like to know about the festival!</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        />
+        <title>Contact</title>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="index.html" class="btn btn-primary navbar-brand">
+                <i class="fa-solid fa-user-astronaut"></i>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggle"
+                aria-controls="navbarToggle"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <form action="#">
-            <label for="name">First Name</label>
-            <input type="text" id="name" name="firstname" placeholder="Your name..">
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="bands.html"
+                            >Bands</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link link-secondary"
+                            href="information.html"
+                            >Information</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <div class="text-center">
+                <h3>Contact Us</h3>
+                <p>
+                    Let us know what you think of the lineup and if there is
+                    anything you'd like to know about the festival!
+                </p>
+            </div>
 
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+            <form action="#" class="form">
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="firstname"
+                        class="form-control bg-blank"
+                        placeholder="Your name.."
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        class="form-control bg-blank"
+                        placeholder="Your last name.."
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="type">Type of Correspondence</label>
+                    <select id="type" name="type" class="form-control bg-blank">
+                        <option value="information">Information</option>
+                        <option value="request">Request</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
 
-            <label for="type">Type of Correspondence</label>
-            <select id="type" name="type">
-                <option value="information">Information</option>
-                <option value="request">Request</option>
-                <option value="feedback">Feedback</option>
-            </select>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="mesage"
+                        placeholder="Write something.."
+                        style="height: 200px"
+                        class="form-control bg-blank"
+                    ></textarea>
+                </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="mesage" placeholder="Write something.." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
-    </main>
-</body>
-<footer class="uoc-footer">
-    <nav>
-        <button>LOGO</button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="information.html">Information</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <div class="social-links">
-        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-</footer>
+                <input
+                    type="submit"
+                    value="Submit"
+                    class="btn btn-primary my-3"
+                />
+            </form>
+        </main>
+    </body>
+    <footer class="footer">
+        <nav class="navbar navbar-default">
+            <a href="index.html" class="navbar-brand">
+                <i class="fa-solid fa-user-astronaut text-secondary"></i>
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="index.html"
+                        >Home</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="bands.html"
+                        >Bands</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="information.html"
+                        >Information</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="contact.html"
+                        >Contact Us</a
+                    >
+                </li>
+                <div class="vr"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com"
+                        ><i class="fa-brands fa-facebook text-secondary"></i
+                    ></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com"
+                        ><i class="fa-brands fa-twitter text-secondary"></i
+                    ></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://instagram.com"
+                        ><i class="fa-brands fa-instagram text-secondary"></i
+                    ></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
 </html>

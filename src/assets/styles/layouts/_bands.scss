@@ -1,0 +1,25 @@
+.band-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    background-color: whitesmoke;
+}
+
+@media (max-width: 1024px) {
+    .band-grid {
+            grid-template-columns: auto auto;
+            row-gap: 20px;
+            column-gap: 40px;
+        }
+}
+
+@media (max-width: 768px) {
+    .band-grid {
+            grid-template-columns: auto;
+            row-gap: 20px;
+        }
+}

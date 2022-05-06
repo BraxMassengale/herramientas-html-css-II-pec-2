@@ -1,0 +1,36 @@
+@function split($num, $div) {
+  @return $num / $div;
+}
+
+.info-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/festival.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: split(100, 0.75)vh;
+    display: flex;
+
+    &__text {
+        margin: auto;
+        text-shadow:$secondary 2px 2px 10px;
+    }
+}
+
+.carousel-block {
+    margin: auto;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+}
+
+@media (max-width: 1024px) {
+    .carousel-block {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-block {
+        width: 80%;
+    }
+}

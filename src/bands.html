@@ -1,95 +1,249 @@
 <!DOCTYPE html>
 <!-- TODO: Update page content -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bands</title>
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-</head>
-<header>
-    <nav role="navigation">
-        <button>LOGO</button>
-        <ul>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="information.html">Information</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+        />
+        <title>Bands</title>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a href="index.html" class="btn btn-primary navbar-brand">
+                <i class="fa-solid fa-user-astronaut"></i>
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggle"
+                aria-controls="navbarToggle"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<body>
-    <main>
-        <section>
-            <h1>Bands</h1>
-        </section>
-        <!-- TODO: Make this section a grid -->
-        <section>
-            <div>
-                <img src="#" alt="">
-                <div>
-                    <h2>Band 1</h2>
-                    <p>Surf Rock</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet animi at blanditiis commodi delectus dolore eius explicabo fuga in laborum laudantium, magni minima necessitatibus nisi officia perspiciatis, suscipit veniam!</p>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="bands.html"
+                            >Bands</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link link-secondary"
+                            href="information.html"
+                            >Information</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-secondary" href="contact.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
             </div>
-            <div>
-                <img src="#" alt="">
-                <div>
-                    <h2>Band 2</h2>
-                    <p>Surf Rock</p>
+        </nav>
+    </header>
+
+    <body>
+        <main>
+            <section class="text-center">
+                <h1>Bands</h1>
+            </section>
+            <section class="band-grid">
+                <div class="card">
+                    <img
+                        src="assets/images/band1.jpg"
+                        class="card-img-top"
+                        alt="Band1"
+                    />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sharks and the Jellyfish</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Surf Rock</h6>
+                        <p class="card-text">
+                            Famous for their mix of 60's surf rock and new age
+                            house, Sharks and the Jellyfish are a world
+                            phenomenon that are sure to blow your socks off!
+                        </p>
+                        <a href="#" class="btn btn-primary"
+                            >Visit this band's Website</a
+                        >
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet animi at blanditiis commodi delectus dolore eius explicabo fuga in laborum laudantium, magni minima necessitatibus nisi officia perspiciatis, suscipit veniam!</p>
-            </div>
-            <div>
-                <img src="#" alt="">
-                <div>
-                    <h2>Band 3</h2>
-                    <p>Surf Rock</p>
+
+                <div class="card">
+                    <img
+                        src="assets/images/band2.jpg"
+                        class="card-img-top"
+                        alt="Band2"
+                    />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">The Problems</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            Experimental
+                        </h6>
+                        <p class="card-text">
+                            The Problems are anything but a problem. Their
+                            unique sound is owed to keyboardist Jerry Slater's
+                            unmatched piano skills which allow him to create
+                            unheard of sonic combinations.
+                        </p>
+                        <a href="#" class="btn btn-primary"
+                            >Visit this band's Website</a
+                        >
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet animi at blanditiis commodi delectus dolore eius explicabo fuga in laborum laudantium, magni minima necessitatibus nisi officia perspiciatis, suscipit veniam!</p>
-            </div>
-            <div>
-                <img src="#" alt="">
-                <div>
-                    <h2>Band 4</h2>
-                    <p>Surf Rock</p>
+
+                <div class="card">
+                    <img
+                        src="assets/images/band3.jpg"
+                        class="card-img-top"
+                        alt="Band3"
+                    />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fewer</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Rock</h6>
+                        <p class="card-text">
+                            Classic, hard-hitting rock with a Norwegian twist.
+                            The Larsen brothers have been making music together
+                            since they were 5 years old and we all hope they
+                            won't stop anytime soon!
+                        </p>
+                        <a href="#" class="btn btn-primary"
+                            >Visit this band's Website</a
+                        >
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet animi at blanditiis commodi delectus dolore eius explicabo fuga in laborum laudantium, magni minima necessitatibus nisi officia perspiciatis, suscipit veniam!</p>
-            </div>
-            <div>
-                <img src="#" alt="">
-                <div>
-                    <h2>Band 5</h2>
-                    <p>Surf Rock</p>
+
+                <div class="card">
+                    <img
+                        src="assets/images/band4.jpg"
+                        class="card-img-top"
+                        alt="Band4"
+                    />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tonky-Wah</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            Country/Rock
+                        </h6>
+                        <p class="card-text">
+                            This Tonkawa based trio incorporates melodies
+                            typical of American Country music as well as Rock n'
+                            Roll and Blues. Their sad, touching songs will bring
+                            a tear to your eye and leave you wanting to listen
+                            again and again.
+                        </p>
+                        <a href="#" class="btn btn-primary"
+                            >Visit this band's Website</a
+                        >
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet animi at blanditiis commodi delectus dolore eius explicabo fuga in laborum laudantium, magni minima necessitatibus nisi officia perspiciatis, suscipit veniam!</p>
-            </div>
-            <div>
-                <img src="#" alt="">
-                <div>
-                    <h2>Band 6</h2>
-                    <p>Surf Rock</p>
+
+                <div class="card">
+                    <img
+                        src="assets/images/band5.jpg"
+                        class="card-img-top"
+                        alt="Band5"
+                    />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sparky Lewis</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Rock</h6>
+                        <p class="card-text">
+                            Sparky Lewis is everything you could want from a
+                            rock band: high-energy, great song-writing, and
+                            controversial. Banned from touring in 23 countries,
+                            their spectacle is definitely not one to be missed!
+                        </p>
+                        <a href="#" class="btn btn-primary"
+                            >Visit this band's Website</a
+                        >
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet animi at blanditiis commodi delectus dolore eius explicabo fuga in laborum laudantium, magni minima necessitatibus nisi officia perspiciatis, suscipit veniam!</p>
-            </div>
-        </section>
-    </main>
-</body>
-<footer class="uoc-footer">
-    <nav>
-        <button>LOGO</button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bands.html">Bands</a></li>
-            <li><a href="information.html">Information</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <div class="social-links">
-        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-</footer>
+
+                <div class="card">
+                    <img
+                        src="assets/images/band6.jpg"
+                        class="card-img-top"
+                        alt="Band6"
+                    />
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jobs for the Rich</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Techno</h6>
+                        <p class="card-text">
+                            Jobs for the Rich is the soundtrack for a futurist
+                            uprising touching on many of modern society's
+                            discontents such as climate change, the housing
+                            crisis, and economic recession, all against a
+                            bumping techno beat.
+                        </p>
+                        <a href="#" class="btn btn-primary"
+                            >Visit this band's Website</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer class="footer">
+        <nav class="navbar navbar-default">
+            <a href="index.html" class="navbar-brand">
+                <i class="fa-solid fa-user-astronaut text-secondary"></i>
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="index.html"
+                        >Home</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="bands.html"
+                        >Bands</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="information.html"
+                        >Information</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-secondary" href="contact.html"
+                        >Contact Us</a
+                    >
+                </li>
+                <div class="vr"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com"
+                        ><i class="fa-brands fa-facebook text-secondary"></i
+                    ></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com"
+                        ><i class="fa-brands fa-twitter text-secondary"></i
+                    ></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://instagram.com"
+                        ><i class="fa-brands fa-instagram text-secondary"></i
+                    ></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
 </html>
