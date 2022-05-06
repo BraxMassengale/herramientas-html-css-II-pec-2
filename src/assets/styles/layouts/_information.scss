@@ -1,14 +1,10 @@
-@function split($num, $div) {
-  @return $num / $div;
-}
-
 .info-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/festival.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: split(100, 0.75)vh;
+    height: 30%;
     display: flex;
 
     &__text {

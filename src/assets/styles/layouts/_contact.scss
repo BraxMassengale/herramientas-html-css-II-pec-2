@@ -1,11 +1,11 @@
 .form {
-    width: 70%;
+    width: $form-width;
     min-height: 70vh;
     margin: auto;
 }
 
 @media (max-width: 768px) {
     .form {
-            width: 80%;
+            width: 90%;
         }
 }

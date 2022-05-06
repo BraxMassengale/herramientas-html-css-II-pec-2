@@ -1,5 +1,9 @@
 @use "sass:color";
 
+@function split($num, $div) {
+  @return $num / $div;
+}
+
 $theme-colors: (
   "primary": #fcde67,
   "secondary": #030e12,
@@ -17,7 +21,4 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 $white: #f0ead6;
 $primary: #fcde67;
 $secondary: #030e12;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
+$form-width: split(100%, 1.25);
